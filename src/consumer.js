@@ -18,5 +18,5 @@ const init = async () => {
 
   channel.consume('export:songs', listener.listen, { noAck: true });
 };
-  
+
 init();

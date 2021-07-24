@@ -1,10 +1,10 @@
 const { Pool } = require('pg');
- 
+
 class MusicsService {
   constructor() {
     this._pool = new Pool();
   }
- 
+
   async getMusic(playlistId) {
     const query = {
       text: `SELECT openmusic.* FROM openmusic
@@ -16,5 +16,5 @@ class MusicsService {
     return result.rows;
   }
 }
- 
+
 module.exports = MusicsService;
