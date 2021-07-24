@@ -1,0 +1,2 @@
+npm install amqplib pg dotenv nodemailer
+node src/consumer.js
